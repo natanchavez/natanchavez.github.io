@@ -1,0 +1,204 @@
+/*  Tags  */
+body {
+    background-attachment: fixed;
+    background-image: url("../img/cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Quicksand', Arial, sans-serif;
+}
+
+footer {
+    background: #2d2e32;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*  IDs  */
+#go-to-top-btn {
+    bottom: 20px;
+    display: none;
+    position: fixed;
+    right: 20px;
+}
+
+#home {
+    background: rgba(33, 33, 33, 0.7);
+    line-height: 1;
+    min-height: 100vh;
+}
+
+#top-navbar {
+    box-shadow: 0 0 10px #000;
+}
+
+
+/*  Classes  */
+.bottom-arrow {
+    animation: arrow-down 1s ease 1s 2;
+    bottom: 6%;
+    font-size: 2rem;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+}
+
+@keyframes arrow-down {
+    0% {
+        left: 50%;
+        bottom: 6%;
+    }
+    50% {
+        left: 50%;
+        bottom: 3%;
+    }
+    100% {
+        left: 50%;
+        bottom: 6%;
+    }
+}
+
+.contact-icon {
+    color: #007bff;
+    font-size: 3rem;
+}
+
+.dev-name {
+    color: #B3E5FC;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.image--hover {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s;
+    visibility: hidden;
+    width: 100%;
+}
+
+.less-than, .greater-than {
+    color: #2d2e32;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.main-content__even-section {
+    background: #25262a;
+    min-height: 100vh;
+}
+
+.main-content__last-section {
+    background: rgba(33, 33, 33, 0.8);
+    min-height: calc(100vh - 32px);
+}
+
+.main-content__odd-section {
+    background: #2d2e32;
+    min-height: 100vh;
+}
+
+.modal__close-btn {
+    color: #aaa;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.modal__close-btn:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.modal__description--background {
+    background: #212121;
+}
+
+.modal__technologies--background {
+    background: #2d2e32;
+}
+
+.nav-item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+}
+
+.nav-item.active, .active > .less-than, .active > .greater-than {
+    color: #00ebab !important;
+    font-weight: 600;
+}
+
+.navbar--fixed {
+    background: #2d2e32;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.project__image--shadow {
+    box-shadow: 0 0 10px #000;
+}
+
+.project__image--shadow:hover .image--hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.self-proclaimed-title {
+    font-size: 2.5rem;
+}
+
+.soft-skill-icon {
+    color: #007bff;
+    font-size: 2rem;
+}
+
+.tech-icon {
+    width: 4rem;
+}
+
+.tech-icon__circle {
+    background: #212121;
+    border-radius: 50%;
+    height: 4rem;
+    overflow: hidden;
+    position: relative;
+    width: 4rem;
+}
+
+.tech-icon__image {
+    height: 2rem;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.technologies__list--element {
+    background: rgba(0, 125, 0, 0.4);
+    border-radius: 6px;
+    color: white;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin: .3rem;
+    padding: .3rem;
+}
+
+.text--light-font {
+    font-weight: 300;
+}
